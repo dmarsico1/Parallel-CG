@@ -8,3 +8,7 @@ In three dimensions, mpi_cart_poisson_3d solves the same equation in parallel on
 To compile the code:
 
 mpifort -o executable mpi_cart_poisson_3d.f95 -I/(netCDF include directory) -L/(path to netCDF lib directory) -lnetcdf -lnetcdff
+
+To run the code:
+
+mpirun -n (# of processors) executable name
